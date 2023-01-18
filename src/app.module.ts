@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { PostsModule } from './posts/posts.module';
+import { WizardsDevModule } from './wizardsDev/wizardsDev.module';
 import { DatabaseModule } from './database/database.module';
 import { HealthModule } from './health/health.module';
 
@@ -12,7 +12,7 @@ import { HealthModule } from './health/health.module';
     }),
     DatabaseModule,
     HealthModule,
-    PostsModule,
+    WizardsDevModule,
   ],
   controllers: [],
   providers: [],
